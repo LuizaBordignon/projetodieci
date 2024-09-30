@@ -32,9 +32,51 @@ body {
     margin: 6px;
     border-radius: 5px;
     cursor: pointer;
-    transition: .6s;
+    transition: .4s;
 }
 
 .bar:hover {
     background-color: #fff;
 }
+
+input{
+    display: none;
+}
+
+.slides
+{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: .7s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%; /* estamos colocando -20% pois a imagem1 ta pegando 100% do width, e para passar para a outra imagem, temos que colocar -20% para colocar o 100% da imagem */
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%; /* vamos aumentando em 20% em 20% ate chegar no final*/
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%; 
+}
+

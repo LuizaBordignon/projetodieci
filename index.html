@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
+    <link rel="stylesheet" href="style/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dieci Móveis - Móveis sob medida</title>
+    <meta name="description" content="description of the site">
+    <meta name="author" content="Luiza Bordignon Moro and Isabele Borges Correa">
 </head>
 <body>
-    <h1>Teste</h1>
+    <header> <!-- Cabeçalho da página-->
+        <nav>
+            <span>Dieci Moveis</span>
+            <ul> <!-- Menu da navegação -->
+                <li><a>Home</a></li>
+                <li><a>Projetos</a></li>
+                <li><a>Sobre Nós</a></li>
+                <li><a>Contato</a></li>
+            </ul>
+               <a>Orçamento aqui</a>
+        </nav>
+    </header> 
+
+    <main>  <!-- Conteúdo da página -->
+        <section>
+            <div class="content">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked> <!-- Colocando todos no mesmo name, dá para selecionar somente um, pois todos estão no mesmo grupo de Slide.-->
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
+
+                    <div class="slide s1">
+                        <img src="./img/1.jpg" alt="paisagem teste">
+                    </div>
+                    <div class="slide s2">
+                        <img src="./img/2.jpg" alt="arvore roxa teste">
+                    </div>
+                    <div class="slide s3">
+                        <img src="./img/3.jpg" alt="predio teste">
+                    </div>
+                    <div class="slide s4">
+                        <img src="./img/4.jpg" alt="montanha teste">
+                    </div>
+                    <div class="slide s5">
+                        <img src="./img/5.jpg" alt="raposa teste">
+                    </div>   
+                </div>
+
+                <div>
+                    <div class="navegation">
+                        <label for="slide1"></label> <!-- O label serve para quando for clicado, direcionar para a imagem correta (selecionar), neste caso vinculamos o label ao ID da primeira imagem, SLIDE1-->
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                        <label for="slide5"></label>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer> <!-- Rodapé da página -->
+    </footer>
 </body>
 </html>

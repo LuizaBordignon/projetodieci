@@ -22,50 +22,53 @@
         </nav>
     </header> 
 
-    <main>  <!-- Conteúdo da página -->
+   <main>  <!-- Conteúdo da página -->
         <section>
-            <div class="content">
-                <div class="slides">
-                    <input type="radio" name="slide" id="slide1" checked> <!-- Colocando todos no mesmo name, dá para selecionar somente um, pois todos estão no mesmo grupo de Slide.-->
+            <article class="content">
+                
+                <section class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
                     <input type="radio" name="slide" id="slide2">
                     <input type="radio" name="slide" id="slide3">
                     <input type="radio" name="slide" id="slide4">
                     <input type="radio" name="slide" id="slide5">
 
-                    <div class="slide s1">
+                    <figure class="slide s1">
                         <img src="./img/1.jpg" alt="paisagem teste">
-                    </div>
-                    <div class="slide s2">
-                        <img src="./img/2.jpg" alt="arvore roxa teste">
-                    </div>
-                    <div class="slide s3">
-                        <img src="./img/3.jpg" alt="predio teste">
-                    </div>
-                    <div class="slide s4">
-                        <img src="./img/4.jpg" alt="montanha teste">
-                    </div>
-                    <div class="slide s5">
-                        <img src="./img/5.jpg" alt="raposa teste">
-                    </div>   
-                </div>
+                    </figure>
 
-                <div>
-                    <div class="navegation">
-                        <label class="bar" for="slide1"></label> <!-- O label serve para quando for clicado, direcionar para a imagem correta (selecionar), neste caso vinculamos o label ao ID da primeira imagem, SLIDE1-->
+                    <figure class="slide s2">
+                        <img src="./img/2.jpg" alt="árvore roxa teste">
+                    </figure>
+
+                    <figure class="slide s3">
+                        <img src="./img/3.jpg" alt="prédio teste">
+                    </figure>
+
+                    <figure class="slide s4">
+                        <img src="./img/4.jpg" alt="montanha teste">
+                    </figure>
+
+                    <figure class="slide s5">
+                        <img src="./img/5.jpg" alt="raposa teste">
+                    </figure>  
+
+        </section>
+                    <nav class="navegation"> <!-- Navegação dos slides -->
+                        <label class="bar" for="slide1"></label>
                         <label class="bar" for="slide2"></label>
                         <label class="bar" for="slide3"></label>
                         <label class="bar" for="slide4"></label>
                         <label class="bar" for="slide5"></label>
-                    </div>
+                    </nav>
 
-                </div>
-
-            </div>
+                </article>
         </section>
+
 
         <section>
         <h1>Sobre Nos</h1>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur enim debitis libero dolorem necessitatibus beatae atque culpa explicabo, quia quam fuga ratione. Accusamus earum eius reiciendis culpa, pariatur esse. Ducimus!</p>
+        <p> martelo prego tals essas coisa</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nemo alias quod consequatur excepturi aliquid voluptatum sed fuga quo? Eius dignissimos non doloribus blanditiis at soluta perspiciatis, iure autem inventore?</p>
         </section>
     </main>

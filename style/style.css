@@ -80,3 +80,25 @@ input{
 #slide5:checked ~ .s1 {
     margin-left: -80%; 
 }
+
+.menu{ /*remover marcadores */ 
+    display: flex;
+    list-style-type: none;
+    justify-content: center; /* alinha os topicos ao meio */
+    align-items: center;  /*alinha os topicos verticalmente */
+    padding: 0;
+    margin: 0;
+}
+
+ .menu li { /*espaço entre os itens  */
+    margin-right: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+    padding: 10px;
+}
+
+
+P {
+    color: #5a4428;
+}

@@ -81,24 +81,44 @@ input{
     margin-left: -80%; 
 }
 
-.menu{ /*remover marcadores */ 
-    display: flex;
-    list-style-type: none;
-    justify-content: center; /* alinha os topicos ao meio */
-    align-items: center;  /*alinha os topicos verticalmente */
-    padding: 0;
-    margin: 0;
+* { /* definindo todos os elementos */
+    margin: 0px;
+    padding: 0px;
 }
 
- .menu li { /*espaço entre os itens  */
-    margin-right: 150px;
-    justify-content: center;
+a { /* cor do texto, transição - vai funcionar quando tiver link */
+    color:#fff;
+    text-decoration: none; /*remove o sublinhado dos links */
+    transition: 0.3s;
+}
+
+a :hover{ /* regras aplicadas quando o cursor do mouse estiver em cima */
+    opacity: 0.7; /* mouse sobre o link, opacidade do link será reduzida */
+}
+
+.logo {
+    font-size: 24px; /*tamanho da fonte */
+    text-transform: uppercase; /* transforma todo texto em maiúsculo*/
+    letter-spacing: 4px; /*espaçamento entre as letras */
+
+}
+
+nav {
+    display:flex;
+    justify-content: space-around; /*espaço entre os intens */
     align-items: center;
-    margin-right: 150px;
-    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #4e4130;
+    height: 8vh; /*ajusta o tamanho com base no navegador - menu funciona em diferentes tam de tela */
 }
 
+.menu {
+    list-style: none;
+    display:flex;
 
-P {
-    color: #5a4428;
+}
+
+.menu li{
+    letter-spacing: 3px;
+    margin-left: 32px; /* afastar itens */
 }

@@ -103,7 +103,7 @@ a :hover{ /* regras aplicadas quando o cursor do mouse estiver em cima */
 
 }
 
-nav {
+.lista {
     display:flex;
     justify-content: space-around; /*espaço entre os intens */
     align-items: center;

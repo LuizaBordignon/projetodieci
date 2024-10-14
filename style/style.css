@@ -137,21 +137,25 @@ a :hover{ /* regras aplicadas quando o cursor do mouse estiver em cima */
     display: block;
 }
 
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px;
+}
+
 .sb{
     text-align: left;
     width: 50%;
-    margin: 0 auto;
-    padding: 60px;
-    float: right;
-
-
+    padding: 20px;
 }
+
 .logou{
-    float: left;
-    padding: 10px;
+
     width: 25%;
-    height: auto;
-    margin-top: 30px;
-    margin-left: 150px; /* Ajusta a posição à esquerda */
-    display: block;
+    padding: 10px;
+    margin-left: 30px;
 }

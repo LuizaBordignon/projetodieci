@@ -1,0 +1,71 @@
+.sb {
+    width: 100%;               /* Define a largura total do contêiner */
+    overflow: hidden;          /* Garante que os itens flutuantes fiquem dentro do contêiner */
+    margin: 0 auto;           /* Centraliza o contêiner na página */
+    padding: 20px;            /* Adiciona algum espaço interno */
+}
+
+.logo2 {
+    display: flex;
+    flex:    1;                  /* A logo vai ocupar 1 parte da largura disponível */
+    max-width: 20%;           /* A logo ocupará no máximo 30% da largura do contêiner */
+    margin-left: 1000px;
+   
+}
+
+.logo2 img{
+    width: 100%;              /* A imagem vai ocupar 100% da largura do contêiner da logo */
+    height: auto;             /* Mantém a proporção da imagem */
+    
+}
+.sobrenos{
+    flex: 1;                  /* O texto vai ocupar 2 partes da largura disponível */
+    padding-left: 20px;       /* Adiciona um espaço entre a imagem e o texto */
+    flex-direction: column; /* Alinha o título acima do parágrafo (coluna) */
+    color: #fff;              /* Cor do texto */
+    font-family: 'Arial', sans-serif; /* Escolha da fonte */
+    letter-spacing: 1px;      /* Espaçamento entre letras */
+    line-height: 1.6;         /* Espaçamento entre linhas */
+    text-align: left;         /* Alinha o texto à esquerda */
+    max-width: 50%;
+    margin: 45;
+}
+.trab {
+    flex: 1;                  /* O texto vai ocupar 2 partes da largura disponível */
+    padding-left: 20px;       /* Adiciona um espaço entre a imagem e o texto */
+    flex-direction: column; /* Alinha o título acima do parágrafo (coluna) */
+    color: #fff;              /* Cor do texto */
+    letter-spacing: 1px;      /* Espaçamento entre letras */
+    line-height: 1.6;         /* Espaçamento entre linhas */
+    text-align: left;         /* Alinha o texto à esquerda */
+    margin-top: 30px;
+    max-width: 50%;
+}
+
+.sb h2 {
+    display: flex;
+    margin-bottom: 10px;      /* Adiciona espaço embaixo do título */
+    margin-top: 0;            /* Remove o espaço em cima do título */
+    font-size: 24px;          /* Tamanho da fonte do título */
+    color:#fff;
+    align-items: flex-start;
+}
+
+.sb{
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px;
+    float: right;
+
+
+}
+.logou{
+    float: left;
+    padding: 10px;
+    width: 25%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 150px; /* Ajusta a posição à esquerda */
+    display: block;
+}

@@ -2,6 +2,10 @@
 <html lang="pt">
 <head>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/carrossel.css">
+    <link rel="stylesheet" href="style/sobrenos.css">
+    <link rel="stylesheet" href="style/footer.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dieci Móveis - Móveis sob medida</title>
@@ -15,13 +19,38 @@
             <!-- <span>Dieci Moveis</span>  -->
              <a class="logo" href="/projetodieci/index.html"> Dieci Moveis</a>
              <ul class="menu"> <!-- Menu da navegação -->
-                <li><a href="/menu/home.html">Home</a></li>
-                <li><a href="/menu/sobrenos.html">Sobre Nós</a></li>
-                <li><a href="/menu/projetos.html">Projetos</a></li>
-                <li><a href="/menu/contato.html">Contato</a></li>
-                <li><a href="/menu/orcamentos.html">Orçamento</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobrenos">Sobre Nós</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contato</a></li>
+                <li><a href="#orçamento">Orçamento</a></li>
             </ul>
+
+            <button class="btn-default">
+                WhatsApp
+            </button>
+
+            <button class="mobile_btn">
+                <!-- botão que só aparece no mobile -->
+                <i class="fa-solid fa-bars"> </i>
+            </button>
         </nav>
+
+     <div class="mobile_menu">
+        <a class="logo" href="/projetodieci/index.html"> Dieci Moveis</a>
+             <ul class="menu_mobile"> <!-- Menu da navegação mobile -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobrenos">Sobre Nós</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contato</a></li>
+                <li><a href="#orçamento">Orçamento</a></li>
+            </ul>
+
+            <button class="btn-defalut">
+                WhatsApp
+            </button>
+        </div>
+    
     </header> 
 
    <main>  <!-- Conteúdo da página -->
@@ -76,9 +105,15 @@
                     <br> <p>Ao longo desses anos, nos tornamos referência no setor de móveis sob medida, sempre comprometidos em oferecer o melhor para nossos clientes, seja em projetos residenciais ou comerciais. Nosso diferencial está na atenção aos detalhes e no atendimento personalizado, buscando entregar móveis que realmente façam a diferença no seu dia a dia.</p>
                     </section>
             </section>
+            <section class="sb" >
+            <h2>Sobre Nos</h2>
+                <p class="sobrenos"> Nós, da Dieci Móveis, estamos há 18 anos no mercado, criando móveis sob medida que atendem perfeitamente às suas necessidades. Nosso foco é sempre oferecer soluções personalizadas, unindo qualidade, funcionalidade e design exclusivo. </p>
+                <p class="trab">Trabalhamos com materiais de alta qualidade e técnicas modernas para garantir que cada projeto seja único e atenda às suas expectativas.
+                <br> Ao longo desses anos, nos tornamos referência no setor de móveis sob medida, sempre comprometidos em oferecer o melhor para nossos clientes, seja em projetos residenciais ou comerciais. Nosso diferencial está na atenção aos detalhes e no atendimento personalizado, buscando entregar móveis que realmente façam a diferença no seu dia a dia.</p>
+                </section>
  
                 <section>
-                    <img class=logou src="img/dieci logo png.png" alt="Logotipo da Dieci Móveis">
+                    <img class=logou src="img/dieci logo png.png" alt="Logotipo da Dieci Móveis" class="logo2">
                 </section>
 
         </article>
@@ -109,20 +144,47 @@
 
         </section>
     </main>
-    <footer> <!-- Rodapé da página -->
-        <div class="interface"> <!-- conteudo centralizado -->
+   <!-- Rodapé da página -->
+   <footer> 
+        <div class="container">
+                 <!-- primeira ul -->
+                    <ul>
+                        <h3> Dieci Móveis </h3>
+                        <p> Funcionalidade e design unidos para criar o ambiente que reflete quem você é </p>
+                    </ul>
+                 <!-- fim da primeira ul -->
 
-            <section class="linefooter">
-                <h2>Ficou com alguma dúvida?</h2>
-                <p>Entre em contato conosco por nossos canais:</p>
-                <article>
-                    <p>Whastapp</p>
-                    <p>Instagram</p>
-                    <p>Facebook</p>
-                </article>
-            </section>
+                <!-- segunda ul -->
+                    <ul>
+                        <h3>Link</h3>
+                        <li> <a href="#">Home</a></li>
+                        <li> <a href="#">Sobre nós</a></li>
+                        <li> <a href="#">Projetos</a></li>
+                        <li> <a href="#">Contato</a></li>
+                        <li> <a href="#">Orçamento</a></li>
+                    </ul>
+                <!-- fim da segunda ul -->
+                    
+                 <!-- terceira ul -->
+                    <ul>
+                        <h3>Redes sociais</h3>
+                        <li>
+                            <p>@diencimoveis</p>
+                        </li>
 
-        </div>     
+                        <li> 
+                            <p>diecimoveis@gmail.com</p>
+                        </li>
+
+                        <li> 
+                            <p>Nova Veneza, Brasil</p>
+                        </li>
+
+                    </ul>
+                <!-- fim da terceira ul -->
+                    
+            </div>
+              
     </footer>
 </body>
 </html>

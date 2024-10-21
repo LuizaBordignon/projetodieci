@@ -46,16 +46,16 @@ a :hover{ /* regras aplicadas quando o cursor do mouse estiver em cima */
 }
 
 #mobile_menu{
-    display:none;
+    display: none;
 }
 
 @media screen and (max-width:1170px) {
-    #lista,
-    #bnt-default{
+    .lista,
+    .bnt-default{
         display: none;
     }
 
-    #mobile_btn{
+    .mobile_btn{
         
     }
 }

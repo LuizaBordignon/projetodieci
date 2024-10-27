@@ -13,21 +13,3 @@
 body{
     background-color: #fdba74;
 }
-
-.btn_padrao{
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: lawngreen;
-    border-radius: 12px;
-    padding: 10px 14px;
-    font-weight: 600;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color .3s ease;
-}
-
-.btn_padrao:hover{
-    background-color: green;
-}

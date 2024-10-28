@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+*{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+body{
+    background-color: #fdba74;
+}
+
 header{
     display: flex;
     width: 100%;
@@ -49,4 +65,11 @@ header a{
         border: 1px solid #7c2d12;
         background-color: #9a3412;
     }
+}
+
+.sb h2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 2%;
 }

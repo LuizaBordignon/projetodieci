@@ -68,15 +68,17 @@ header a{
         background-color: #9a3412;
     }
 }
+    .sb{
+        display: flex;
+        justify-content: left;
+        align-items: left;
 
-.sb p {
+    }
+    .sb p {
     width: 200px;
     height: auto;
     background-color: red;
-    border: 1px sold black;
-    display: flex;
-    justify-content: flex-end;
-
+    border: 1px solid black;
 }
 
 

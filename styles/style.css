@@ -18,6 +18,7 @@ body{
 
 header{
     display: flex;
+    background-color: #f4f4f4;
     width: 100%;
     height: 20%;
     align-items: center;
@@ -45,7 +46,9 @@ header a:hover {
     display: flex;
     align-items: center;
     justify-content: left;
-    margin: 0px 0px 0px 6%;
+    margin: 0px 0px 0px 3%;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .logo:hover {
@@ -80,40 +83,45 @@ header a:hover {
         background-color: #9a3412;
     }
 }
-    .sb{
+    .prop{
         display: flex;
         justify-content: flex-end;
+        flex-direction: column;
         align-items: left;
-        padding: 30px 8% 0px 60px;
+        padding: 30px 8% 0px 50%;
 
     }
-    .sb p {
+    .prop p {
     width: 600px;
     height: auto;
-    text-align: center;
+    text-indent: 2em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    text-align: justify;
 
     }
 
-    .tsb {
+    .tesp {
         display: flex;
         flex-direction: column; 
         justify-content: flex-end;
         align-items: flex-end; 
         font-weight: 800;
         font-style: normal;
-        padding: 60px 22% 0px 60px; 
+        padding: 60px 18% 0px 0px; 
     }
     
-    .tsb::after {
+    .tesp::after {
         content: ""; 
         margin-top: 10px; 
-        width: 80px; 
+        margin-right: 6%;
+        width: 180px; 
         height: 4px; 
         background-color: #b70000;
         align-self: flex-end; 
+        
     }
-       
-    
+
     .logou{
         display: flex;
         position: absolute;
@@ -121,6 +129,124 @@ header a:hover {
         margin-left: 10%;
         z-index: 1;
         width: 30%;
+    }
+
+    .sb{
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+        align-items: right; 
+        font-weight: 800;
+        font-style: normal;
+        padding: 90px 0px 0px 20%; 
+
+    }
+
+    .sb::after {
+        content: ""; 
+        margin-top: 10px; 
+        margin-left: 10px;
+        width: 90px; 
+        height: 4px; 
+        background-color: #b70000;
+        align-self: flex-start; 
+    }
+
+    .sbt {
+        text-align: justify;
+        justify-content: flex-start;
+        align-items: right;
+        padding: 20px 0% 50px 60px;
+       
+    }
+
+    .sbt p{
+    width: 600px;
+    height: auto;
+    text-align: justify;
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+    margin-bottom: 1em; /* Adiciona um espaço entre os parágrafos */
+    }
+    
+    .imagem1 {
+        display: flex;
+        position: absolute;
+        top: 230%;
+        margin-left: 55%;
+        z-index: 1;
+        width: 40%;
+    }
+
+
+    .missao, .visao, .valores {
+        display: flex;
+        flex-direction: column; 
+        font-size: 25px;
+        font-weight: 800;
+        font-style: normal;
+        color: #b70000;
+        padding: 0px 0px 0px 40px; 
+    }
+    
+    .missao:hover, .visao:hover, .valores:hover {
+        color: #000000; 
+    }
+  
+    .missaot, .visaot, .valorest {
+        display: flex;
+        justify-content: flex-start;
+        align-items: left;
+        padding: 10px 0px 20px 60px;
+        width: 600px;
+        height: auto;
+        text-align: left;
+    }
+
+    .footer {
+        background-color: #f4f4f4; 
+        color: rgb(0, 0, 0); 
+        padding: 20px 0; 
+        text-align: center; 
+    }
+
+    .social-icons {
+        list-style: none; 
+        padding: 0; 
+        margin: 10px 0 0; 
+        color: #000000;
+    }
+    
+    .social-icons li {
+        display: inline; 
+        margin: 0 10px; 
+    }
+    
+    .social-icons a {
+        color:#000000;
+        font-size: 24px; 
+        text-decoration: none; 
+    }
+    
+    .social-icons a:hover {
+        color: #b70000; 
+    }
+    
+    /* Responsividade */
+    @media (max-width: 768px) {
+        footer .container {
+            flex-direction: column; /* Coloca as colunas em linha vertical */
+            align-items: center; /* Centraliza as colunas */
+        }
+        
+        .tesp {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center; 
+            font-weight: 800;
+            font-style: normal;
+            padding: 60px 18% 0px 0px; 
+        }
     }
 
     

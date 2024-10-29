@@ -9,26 +9,28 @@
     
     .container img{
         width: auto;
-        height: 400px;
-        max-width: 300px;    
+        height: 380px;
+        max-width: auto;    
     }
 
     .container article {
         margin: 40px;
-        margin-top: 40px;
-        box-shadow: 0px 0px 0px 4px rgba(0,0,0, 0.1);
+        margin-top: 50px;
+        box-shadow: 0px 0px 12px 4px rgba(0,0,0, 0.1);
         transition: transform 0.3s ease-in-out;
-        position: relative; 
+        position: relative;
+        
     }
 
     .container article:hover {
         opacity: 0.3;
         transform: scale(1.2);
+        
     }
 
     .container article:hover p {
         visibility: visible;
-        opacity: 1;
+    
     }
 
     .container p {
@@ -51,7 +53,7 @@
         flex-direction: column; /* Coloca o texto e a linha em coluna */
         justify-content: center;
         align-items: center;
-        margin-top: 350px;
+        margin-top: 120px;
         font-family: "Poppins", serif;
         font-weight: 800;
         font-style: normal;

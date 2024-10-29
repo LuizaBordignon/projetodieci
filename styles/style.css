@@ -33,14 +33,26 @@ header ul{
 header a{
     margin: 50px;
     text-decoration: none;
-    color: black;
+    color: black;   
 }
+
+header a:hover {
+    color: #b70000; /* Cor ao passar o mouse */
+    transition: transform 0.3s ease-in-out;
+}
+
 .logo{
     display: flex;
     align-items: center;
     justify-content: left;
     margin: 0px 0px 0px 6%;
 }
+
+.logo:hover {
+    color: #b70000; /* Cor ao passar o mouse */
+    
+}
+
 
 @media (max-width: 670px){
     
@@ -82,13 +94,26 @@ header a{
 
     }
 
-    .tsb{
+    .tsb {
         display: flex;
+        flex-direction: column; 
         justify-content: flex-end;
-        align-items: center;
-        padding: 60px 23% 0px 60px;
-        
+        align-items: flex-end; 
+        font-weight: 800;
+        font-style: normal;
+        padding: 60px 22% 0px 60px; 
     }
+    
+    .tsb::after {
+        content: ""; 
+        margin-top: 10px; 
+        width: 80px; 
+        height: 4px; 
+        background-color: #b70000;
+        align-self: flex-end; 
+    }
+       
+    
     .logou{
         display: flex;
         position: absolute;
@@ -98,34 +123,4 @@ header a{
         width: 30%;
     }
 
-    .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0px 0px 0px 0px;
-    }
     
-    .container img{
-        width: auto;
-        height: auto;
-        max-width: 300px;
-    }
-    .container article {
-        background: #c0c4cb;
-        padding: 8px;
-        margin: 20px;
-
-    }
-
-    .container p {
-        text-align: center;
-    }
-
-    .tprojeto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 300px;
-        
-    }

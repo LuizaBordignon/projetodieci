@@ -83,6 +83,7 @@ header a:hover {
         background-color: #9a3412;
     }
 }
+
     .prop{
         display: flex;
         justify-content: flex-end;
@@ -161,25 +162,25 @@ header a:hover {
     }
 
     .sbt p{
-    width: 600px;
-    height: auto;
-    text-align: justify;
-    line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
-    margin-bottom: 1em; /* Adiciona um espaço entre os parágrafos */
+        width: 600px;
+        height: auto;
+        text-align: justify;
+        line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+        margin-bottom: 1em; /* Adiciona um espaço entre os parágrafos */
+    }
+
+    .grid-article{
+
     }
     
     .imagem1 {
-        display: flex;
-        position: absolute;
-        top: 230%;
-        margin-left: 55%;
-        z-index: 1;
-        width: 40%;
+       
     }
 
 
     .missao, .visao, .valores {
         display: flex;
+        width: 180px;
         flex-direction: column; 
         font-size: 25px;
         font-weight: 800;

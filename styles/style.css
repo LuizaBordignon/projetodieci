@@ -134,74 +134,83 @@ header a:hover {
 
     .sb{
         display: flex;
-        flex-direction: column; 
-        justify-content: flex-start;
-        align-items: right; 
+        flex-direction: column; /* Coloca o texto e a linha em coluna */
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        font-family: "Poppins", serif;
         font-weight: 800;
         font-style: normal;
-        padding: 60px 0px 0px 20%; 
-
     }
 
+
     .sb::after {
-        content: ""; 
+        content: ""; /* Conteúdo vazio para a linha */
         margin-top: 10px; 
-        margin-left: 10px;
-        width: 90px; 
-        height: 4px; 
-        background-color: #b70000;
-        align-self: flex-start; 
+        width: 60px; /* Largura da linha */
+        height: 4px; /* Altura da linha */
+        background-color: #b70000; 
     }
 
     .sbt {
-        text-align: justify;
-        justify-content: flex-start;
-        align-items: right;
-        padding: 20px 0% 50px 60px;
-       
-    }
+    
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0px 100px;
+    
+        }
 
     .sbt p{
         width: 600px;
         height: auto;
-        text-align: justify;
-        line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
-        margin-bottom: 1em; /* Adiciona um espaço entre os parágrafos */
+        line-height: 1.5;
+        margin-bottom: 1em;
+        text-align: center; 
     }
 
-    .grid-article{
-
+    .mvv{
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
     }
     
-    .imagem1 {
-       
-    }
-
-
-    .missao, .visao, .valores {
-        display: flex;
-        width: 180px;
-        flex-direction: column; 
+    .missao{
+        width: auto;
         font-size: 25px;
         font-weight: 800;
-        font-style: normal;
         color: #b70000;
-        padding: 0px 0px 0px 40px; 
+        padding: 0px 220px;
     }
-    
-    .missao:hover, .visao:hover, .valores:hover {
-        color: #000000; 
+    .visao{
+        width: auto;
+        font-size: 25px;
+        font-weight: 800;
+        color: #b70000;
+        padding: 0px 150px;
     }
-  
-    .missaot, .visaot, .valorest {
+    .valores{
+        width: auto;
+        font-size: 25px;
+        font-weight: 800;
+        color: #b70000;
+        padding: 0px 220px;
+    }
+
+    .container-txt{
         display: flex;
+        gap: 20px;
         justify-content: flex-start;
-        align-items: left;
-        padding: 10px 0px 20px 60px;
-        width: 600px;
-        height: auto;
-        text-align: left;
+        align-items: flex-start;
+        text-indent: 2em;
+        padding: 20px 50px 50px;
     }
+    .missaot, .visaot, .valorest {
+        width: 500px;
+        text-align: center;
+    }
+        
 
     .footer {
         background-color: #f9f7f7;
@@ -250,4 +259,5 @@ header a:hover {
         }
     }
 
+    
     

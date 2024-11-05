@@ -1,75 +1,54 @@
-.content{
-    width: 100%; /* O carrossel ocupa 100% da largura da tela */
-    height: 60vh; /* Ajuste a altura conforme necessário, aqui está 60% da altura da tela */
+@charset "utf-8";
+/* CSS Document */
+
+
+.fadeIn{
+	
+    width: 100%; 
+    height: 60vh; 
     overflow: hidden;
     position: relative;
     margin: 0 auto;
+    object-fit: cover;
+    
 }
 
-.navegation
-{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
+
+.fadeIn {
+    transition: opacity 1s ease-in-out; /* Transição suave */
+    opacity: 1;
 }
 
-.bar{
-    width: 10px;
-    height: 10px;
-    border: 2px solid #fff;
-    margin: 6px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .4s;
+.fade-out {
+    opacity: 0;
 }
 
-.bar:hover {
-    background-color: #fff;
+#moldura{
+	
+	max-width: 100%;
+
 }
 
-input{
-    display: none;
+.grupoBotao{
+	
+	margin: 0 auto;
+	text-align: center;	
+	
 }
 
-.slides
-{
-    width: 500%;
-    height: 100%;
-    display: flex;
+.botao{
+	margin: 5px;
+	padding: 4px;
+	background: #139DE0;
+	border-radius: 8px;
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 18px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	color: white;
 }
 
-.slide{
-    width: 20%;
-    transition: .6s;
-    flex-shrink: 0;
-    margin: 0;
-}
 
-.slide img {
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
-    object-fit: cover; /* Mantém a proporção das imagens e preenche o espaço */
-}
 
-#slide1:checked ~ .s1 {
-    margin-left: 0;
-}
 
-#slide2:checked ~ .s1 {
-    margin-left: -20%; /* estamos colocando -20% pois a imagem1 ta pegando 100% do width, e para passar para a outra imagem, temos que colocar -20% para colocar o 100% da imagem */
-}
-
-#slide3:checked ~ .s1 {
-    margin-left: -40%; /* vamos aumentando em 20% em 20% ate chegar no final*/
-}
-
-#slide4:checked ~ .s1 {
-    margin-left: -60%;
-}
-
-#slide5:checked ~ .s1 {
-    margin-left: -80%; 
-}

@@ -169,49 +169,6 @@ header a:hover {
         margin-bottom: 1em;
         text-align: center; 
     }
-
-    .mvv{
-        display: flex;
-        gap: 20px;
-        justify-content: flex-start;
-    }
-    
-    .missao{
-        width: auto;
-        font-size: 25px;
-        font-weight: 800;
-        color: #b70000;
-        padding: 0px 220px;
-    }
-    .visao{
-        width: auto;
-        font-size: 25px;
-        font-weight: 800;
-        color: #b70000;
-        padding: 0px 150px;
-    }
-    .valores{
-        width: auto;
-        font-size: 25px;
-        font-weight: 800;
-        color: #b70000;
-        padding: 0px 220px;
-    }
-
-    .container-txt{
-        display: flex;
-        gap: 20px;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-indent: 2em;
-        padding: 20px 50px 50px;
-    }
-    .missaot, .visaot, .valorest {
-        width: 500px;
-        text-align: center;
-    }
-        
-
     .footer {
         background-color: #f9f7f7;
         color: rgb(193, 191, 191); 

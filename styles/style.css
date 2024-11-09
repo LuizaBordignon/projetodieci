@@ -55,12 +55,75 @@ header a:hover {
     color: #b70000; /* Cor ao passar o mouse */
     
 }
-    .div{
-        display: flex;
-        flex-direction: row;
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 0px;
+    
     }
     
+    .container img{
+        width: auto;
+        height: 380px;
+        max-width: auto;    
+    }
 
+    .container article {
+        height: 380px;
+        margin: 40px;
+        margin-top: 50px;
+        box-shadow: 0px 0px 12px 4px rgba(0,0,0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        
+    }
+
+    .container article:hover {
+        opacity: 0.3;
+        transform: scale(1.2);
+        
+    }
+
+    .container article:hover p {
+        visibility: visible;
+    
+    }
+    .container p {
+    visibility: hidden;
+    position: absolute; /* Coloca o texto em cima da imagem */
+    top: 90%; /* Alinha verticalmente o texto ao centro */
+    left: 50%; /* Alinha horizontalmente o texto ao centro */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #4a3c3c;
+    padding: 10px;
+    border-radius: 5px;
+
+    }
+    .tprojeto {
+        display: flex;
+        flex-direction: column; /* Coloca o texto e a linha em coluna */
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        font-family: "Poppins", serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+    
+    .tprojeto::after {
+        content: ""; /* Conteúdo vazio para a linha */
+        margin-top: 10px; 
+        width: 100px; /* Largura da linha */
+        height: 4px; /* Altura da linha */
+        background-color: #b70000; 
+    }
 
     .sb{
         display: flex;
@@ -127,6 +190,7 @@ header a:hover {
     .social-icons a:hover {
         color: #b70000; 
     }
+    
     
     /* Responsividade */
     @media (max-width: 768px) {

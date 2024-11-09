@@ -55,31 +55,93 @@ header a:hover {
     color: #b70000; /* Cor ao passar o mouse */
     
 }   
-    .espaco{
+    .caraio{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    .wrapper{
+        display: flex;
+        margin: 8% auto;
+        width: 100%;
+    }
+    .imagem{
+        max-width: 80%;
+        height: auto;
+        float: left;
+        margin: 0px 0px 0px 20%;
+    }
+    .text-box{
+        flex-direction: column;
+        margin-right: 5%;
+
+    }
+    .text-box p{
+        margin-top: 3%;
+        margin-left: 15%;
+        text-indent: 30px;
+        width: 80%;
+        height: auto;
+    }
+    .text-box h2{
+        text-align: center;
+    }
+
+    .tprojeto{
+        margin: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0px 0px 5% 0px;
+    }
+    .article{
+        background-color:rgb(240, 240, 240) ;
+        padding: 8px;
+        margin: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .article:hover{
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+        margin: 20px;
+    
+    }
+    .article img{
+        max-width: 300px;
+    }
+    .article p{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #475569;
+    }
+
     .sb{
         display: flex;
-        flex-direction: column; /* Coloca o texto e a linha em coluna */
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 50px;
-        font-family: "Poppins", serif;
-        font-weight: 800;
-        font-style: normal;
     }
 
 
     .sb::after {
-        content: ""; /* Conteúdo vazio para a linha */
+        content: ""; 
         margin-top: 10px; 
-        width: 60px; /* Largura da linha */
-        height: 4px; /* Altura da linha */
+        width: 60px; 
+        height: 4px;
         background-color: #b70000; 
     }
 
     .sbt {
-    
         display: flex;
         justify-content: center;
         flex-direction: column;

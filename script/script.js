@@ -80,3 +80,25 @@ function MostrarFoto() {
     }, 300);
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleciona todos os links de navegação (o addeventlistener ele "escuta" toda a pagina e o DOMCONTENTLOADED é Toda a pagina)
+    const links = document.querySelectorAll('.navbar a');
+
+    // Adiciona um evento de clique para cada link (esse foreach é como se fosse um for)
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Impede o comportamento padrão de navegação
+
+            // Obtém o ID da seção (removendo o #)
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId); // Obtém o elemento da seção
+
+            // Rolagem suave até a seção com deslocamento
+            window.scrollTo({
+                top: targetElement.offsetTop - 50, // Desloca 50px acima da posição da seção
+                behavior: 'smooth' // Define a rolagem suave
+            });
+        });
+    });
+});
+

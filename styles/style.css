@@ -115,7 +115,7 @@ header a:hover {
 }
 
 .tprojeto{
-    margin: 2%;
+    margin: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,12 +222,14 @@ article iframe{
 }
     
 @media (max-width: 768px) {
+
     footer .container {
         flex-direction: column; /* Coloca as colunas em linha vertical */
         align-items: center; /* Centraliza as colunas */
     }
         
     .tesp {
+        
         display: flex;
         flex-direction: column; 
         justify-content: center;
@@ -260,17 +262,9 @@ article iframe{
         border-radius: 2px;
         width: 100px;
         height: 20px;
-        border: 1px solid #7c2d12;
-        background-color: #9a3412;
+        border: 1px solid #acacac;
+        background-color: #bebebe;
         }
-    }
-
-    @media (max-width: 1800px){
-        .text-box{
-            margin-top: 80px;
-        }
-    }
-    @media (max-width: 670px){
 
     .espaco{
         display: flex;
@@ -278,22 +272,27 @@ article iframe{
         align-items: center;
         flex-direction: column;
     }
-
+    
     .imagem{
         width: 50vw;
+        align-items: center;
         margin: 0px;
     }
     .text-box{
-        margin-left: 50px;
-      
         width: 600px;
         height: auto;
         line-height: 1.5;
-        margin-bottom: 1em;
+        margin: 0px;
         text-align: center;
 
     }
-}
+    }
+
+    @media (max-width: 1800px){
+        .text-box{
+            margin-top: 80px;
+        }
+    }
 
 
     

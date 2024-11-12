@@ -222,11 +222,6 @@ article iframe{
 }
     
 @media (max-width: 768px) {
-
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
     footer .container {
         flex-direction: column; /* Coloca as colunas em linha vertical */
         align-items: center; /* Centraliza as colunas */
@@ -245,6 +240,11 @@ article iframe{
     }
 
     @media (max-width: 670px){
+    
+    *{
+        margin: 0px;
+        padding: 0%;
+    }
     
     .logo{
         margin: 0px 5% 0px 5%;

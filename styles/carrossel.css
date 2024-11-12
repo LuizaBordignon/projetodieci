@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+*{
+    margin: 0 auto;
+}
 
 .fadeIn{
 	
@@ -61,7 +64,3 @@
     background: black /* Mudança de cor no hover */
 }
 
-@media (max-width: 670px){
-    
-    
-}

@@ -51,6 +51,7 @@ header{
 header ul{
     display: flex;
     justify-content: flex-end;
+
     list-style: none;
 }
 header a{
@@ -82,10 +83,10 @@ header a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
+
 .wrapper{
-    margin: 10% auto;
+    margin:5% auto;
     width: 100%;
     max-width: 45%;
 }
@@ -99,11 +100,11 @@ header a:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 55%;
+    max-width: 50%;
     width: 100%;
     
-
 }
+
 .text-box p{
     margin-top: 3%;
     text-indent: 30px;
@@ -278,9 +279,10 @@ article iframe{
     }
     
     .imagem{
+        margin: 0 auto;
         width: 50vw;
         align-items: center;
-        margin: 0px;
+       
     }
     .text-box{
         width: 600px;
@@ -288,9 +290,31 @@ article iframe{
         line-height: 1.5;
         margin: 0px;
         text-align: center;
+        max-width: 70%;
+    }
 
+    .sbt p {
+        width: 600px;
+        height: auto;
+        line-height: 1.5;
+        margin: 0px;
+        text-align: center;
+        max-width: 70%;
+
+        }
+    
+    .google-maps h2 {
+        margin-top: 30px;
+        text-align: center;
+        }
+
+    .google-maps article{
+        width: 100%; 
+        max-width: 400px; 
+        
     }
-    }
+}
+
 
     @media (max-width: 1800px){
         .text-box{

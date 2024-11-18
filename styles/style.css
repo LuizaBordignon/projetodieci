@@ -130,6 +130,11 @@ header a:hover {
     padding: 0px 0px 5% 0px;
     
 }
+
+.container a{
+    text-decoration: none;
+}
+
 .article{
     background-color:rgb(240, 240, 240) ;
     padding: 8px;

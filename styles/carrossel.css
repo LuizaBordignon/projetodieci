@@ -5,20 +5,14 @@
     margin: 0 auto;
 }
 
-.fadeIn{
-	
-    width: 100%; 
-    height: 60vh; 
+.fadeIn {
+    width: 100%;
+    height: 60vh;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    object-fit: cover; /*deixa a tela esticada*/
-    
-}
-
-
-.fadeIn {
-    transition: opacity 0.5s ease-in-out; /* Transição suave */
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out; /* Suaviza a troca */
     opacity: 1;
 }
 

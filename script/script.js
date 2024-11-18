@@ -60,6 +60,7 @@ function VoltarFoto(){
     automaticofoto() 
 }
 
+
 function automaticofoto()
 {
     temporizador = setInterval(AvancarFoto,tempointervalo)
@@ -73,12 +74,19 @@ function MostrarFoto() {
 
     // Espera 500ms (meio segundo) para trocar a imagem enquanto o fade-out ocorre
     setTimeout(() => {
-        moldura.src = "img/" + fotos[indice];
-        
-        // Remove a classe fade-out após a troca da imagem para que o fade-in aconteça
+    moldura.src = "img/" + fotos[indice];
+    
+        // Remove a classe fade-out após a troca da imagem e adiciona fade-in
         moldura.classList.remove("fade-out");
-    }, 150);
+        moldura.classList.add("fade-in");
+
+        // Remove a classe fade-in após o término do efeito
+        setTimeout(() => {
+            moldura.classList.remove("fade-in");
+        }, 250); // Duração do fade-in
+    }, 250); // Duração do fade-out
 }
+
 
 document.addEventListener("DOMContentLoaded", function() {
     // Seleciona todos os links de navegação (o addeventlistener ele "escuta" toda a pagina e o DOMCONTENTLOADED é Toda a pagina)
@@ -101,4 +109,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-

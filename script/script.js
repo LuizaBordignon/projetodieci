@@ -77,7 +77,7 @@ function MostrarFoto() {
         
         // Remove a classe fade-out após a troca da imagem para que o fade-in aconteça
         moldura.classList.remove("fade-out");
-    }, 300);
+    }, 150);
 }
 
 document.addEventListener("DOMContentLoaded", function() {

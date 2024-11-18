@@ -12,13 +12,13 @@
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    object-fit: cover;
+    object-fit: cover; /*deixa a tela esticada*/
     
 }
 
 
 .fadeIn {
-    transition: opacity 1s ease-in-out; /* Transição suave */
+    transition: opacity 0.5s ease-in-out; /* Transição suave */
     opacity: 1;
 }
 

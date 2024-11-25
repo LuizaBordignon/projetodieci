@@ -5,6 +5,7 @@ var temporizador;
 var botaoVoltar;
 var botaoAvancar;
 
+
 const tempointervalo = 3000
 
 botaoVoltar = document.
@@ -17,7 +18,7 @@ moldura = document.getElementById("moldura")
 
 fotos = ["1.jpg","2.jpg","3.jpg","4.jpg", "5.jpg"]
 
-indice = 0
+indice = 0 //sequencia das fotos (0=1 foto)
 
 window.onload = inicio
 
@@ -72,7 +73,7 @@ function MostrarFoto() {
     // Aplica a classe fade-out para fazer a transição suave
     moldura.classList.add("fade-out");
 
-    // Espera 500ms (meio segundo) para trocar a imagem enquanto o fade-out ocorre
+    // Espera 250ms (meio segundo) para trocar a imagem enquanto o fade-out ocorre
     setTimeout(() => {
     moldura.src = "img/" + fotos[indice];
     

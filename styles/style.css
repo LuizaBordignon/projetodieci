@@ -111,13 +111,15 @@ header a:hover {
     text-indent: 30px;
     width: 80%;
     height: auto;
+    
 }
 .text-box h2{
     text-align: center;
+    
 }
 
 .tprojeto{
-    margin: 80px;
+    margin: 80px 0px 0px 0px; /*é como se fosse um relogio em cima, lado, baixo, esquerda*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +147,7 @@ header a:hover {
 .article:hover{
     font-size: 1rem;
     transition: transform 0.3s ease;
-    transform: scale(1.1);
+    transform: scale(1.1); /* a partir de 1 vai pra frente, 0 vai pra tras*/
     margin: 20px;
     
 }
